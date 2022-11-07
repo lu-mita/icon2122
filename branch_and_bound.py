@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Author: Nathan Rice
 0-1 Knapsack Problem using best first branch and bound method
 Returns maxprofit with list storing the index position of the items in the best solution.
 The profit is maximized while staying under the weight limit.
@@ -8,35 +7,18 @@ This program uses a priority queue to store the nodes ordered by best bound,
 the node with the highest bound value is returned when removing from the priority queue.
 The best first approach arrives at an optimal solition faster than breadth first search.
 """
-# examples
-# W = 13
-# i  pi  wi pi/wi
-# 1 $20  2   10
-# 2 $30  5   6
-# 3 $35  7   5
-# 4 $12  3   4
-# 5 $3   1   3
-# problem definition
-# n = 5 #items given
-# W = 13 # capacity of knapsack
-# p = [0, 20, 30, 35, 12, 3] # profit of each item (starts with item 0 = $0)
-# w = [0, 2, 5, 7, 3, 1] # weight of each item
-# p_per_weight = [0, 10, 6, 5, 4, 3] #price per weight
 
-# example 6.1
 # items are ordered by price per weight
 import pandas as pd
 
-df = pd.read_csv('output2.csv')
-n = 60
-W = 10
+df = pd.read_csv('Output_.csv')
+n = 100
+W = 80
 p = df["UTILE"]
 w = df["PESO VOLUMETRICO"]
 p_per_weight = p/w
+food = list(df["PRODOTTO"])
 
-"""p_per_weight = list(p_per_weight)
-p_per_weight.sort(reverse=True)"""
-print(p_per_weight, "\n")
 
 class Priority_Queue:
     def __init__(self):
@@ -161,7 +143,17 @@ while pq.length != 0:
 
 
 print("\nEND maxprofit = ", maxprofit, "nodes generated = ", nodes_generated)
-print("bestitems = ", bestitems)
+print("Best items=[", end=" ")
+for i in range(len(bestitems)):
+    for j in range(len(food)):
+        if i < len(bestitems)-1:
+            if bestitems[i] == j:
+                print(food[j], end=", ")
+            pass
+        elif bestitems[i] == j and i == len(bestitems)-1:
+            print(food[j], "]")
+
+
 
 
 
