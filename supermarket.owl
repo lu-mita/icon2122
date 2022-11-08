@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/nicolin/ontologies/2022/9/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/nicolin/ontologies/2022/9/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/nicolin/ontologies/2022/9/untitled-ontology-5"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Food_product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ground_Transportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mean_of_transportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Point_of_arrival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Start_point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#truck"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#carries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_arrived_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#started_from"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#arrival_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#departure_date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#is_in_quantity_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#max_transport_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#transport_cost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#apple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bartolini"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bologna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cheese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fedex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#milano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#milk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pasta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#roma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#verona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#watermelon"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Food_product"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ground_Transportation"/>
+        <Class IRI="#Mean_of_transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Point_of_arrival"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Start_point"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#truck"/>
+        <Class IRI="#Ground_Transportation"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Food_product"/>
+        <NamedIndividual IRI="#apple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#truck"/>
+        <NamedIndividual IRI="#bartolini"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Start_point"/>
+        <NamedIndividual IRI="#bologna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food_product"/>
+        <NamedIndividual IRI="#cheese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#truck"/>
+        <NamedIndividual IRI="#fedex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#truck"/>
+        <NamedIndividual IRI="#gls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Start_point"/>
+        <NamedIndividual IRI="#milano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food_product"/>
+        <NamedIndividual IRI="#milk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food_product"/>
+        <NamedIndividual IRI="#pasta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Point_of_arrival"/>
+        <NamedIndividual IRI="#roma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Start_point"/>
+        <NamedIndividual IRI="#verona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food_product"/>
+        <NamedIndividual IRI="#watermelon"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_arrived_in"/>
+        <NamedIndividual IRI="#apple"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#started_from"/>
+        <NamedIndividual IRI="#apple"/>
+        <NamedIndividual IRI="#verona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#bartolini"/>
+        <NamedIndividual IRI="#cheese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#bartolini"/>
+        <NamedIndividual IRI="#milk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_arrived_in"/>
+        <NamedIndividual IRI="#cheese"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#started_from"/>
+        <NamedIndividual IRI="#cheese"/>
+        <NamedIndividual IRI="#milano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#fedex"/>
+        <NamedIndividual IRI="#pasta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#gls"/>
+        <NamedIndividual IRI="#apple"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#carries"/>
+        <NamedIndividual IRI="#gls"/>
+        <NamedIndividual IRI="#watermelon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_arrived_in"/>
+        <NamedIndividual IRI="#milk"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#started_from"/>
+        <NamedIndividual IRI="#milk"/>
+        <NamedIndividual IRI="#milano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_arrived_in"/>
+        <NamedIndividual IRI="#pasta"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#started_from"/>
+        <NamedIndividual IRI="#pasta"/>
+        <NamedIndividual IRI="#bologna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_arrived_in"/>
+        <NamedIndividual IRI="#watermelon"/>
+        <NamedIndividual IRI="#roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#started_from"/>
+        <NamedIndividual IRI="#watermelon"/>
+        <NamedIndividual IRI="#verona"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_in_quantity_of"/>
+        <NamedIndividual IRI="#apple"/>
+        <Literal>500kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#arrival_date"/>
+        <NamedIndividual IRI="#bartolini"/>
+        <Literal>13/04/2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departure_date"/>
+        <NamedIndividual IRI="#bartolini"/>
+        <Literal>11/04/2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_transport_of"/>
+        <NamedIndividual IRI="#bartolini"/>
+        <Literal>700 kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transport_cost"/>
+        <NamedIndividual IRI="#bartolini"/>
+        <Literal>50€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_in_quantity_of"/>
+        <NamedIndividual IRI="#cheese"/>
+        <Literal>150kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departure_date"/>
+        <NamedIndividual IRI="#fedex"/>
+        <Literal>15/05/2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departure_date"/>
+        <NamedIndividual IRI="#fedex"/>
+        <Literal>18/05/2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_transport_of"/>
+        <NamedIndividual IRI="#fedex"/>
+        <Literal>750kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transport_cost"/>
+        <NamedIndividual IRI="#fedex"/>
+        <Literal>45€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#arrival_date"/>
+        <NamedIndividual IRI="#gls"/>
+        <Literal>17/07/2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#departure_date"/>
+        <NamedIndividual IRI="#gls"/>
+        <Literal>16/07/2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_transport_of"/>
+        <NamedIndividual IRI="#gls"/>
+        <Literal>800kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#transport_cost"/>
+        <NamedIndividual IRI="#gls"/>
+        <Literal>40€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_in_quantity_of"/>
+        <NamedIndividual IRI="#milk"/>
+        <Literal>200 l</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_in_quantity_of"/>
+        <NamedIndividual IRI="#pasta"/>
+        <Literal>100 kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_in_quantity_of"/>
+        <NamedIndividual IRI="#watermelon"/>
+        <Literal>600 kg</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#carries"/>
+        <Class IRI="#truck"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_arrived_in"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#started_from"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#carries"/>
+        <Class IRI="#Food_product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_arrived_in"/>
+        <Class IRI="#Point_of_arrival"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#started_from"/>
+        <Class IRI="#Start_point"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#arrival_date"/>
+        <Class IRI="#Mean_of_transportation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#departure_date"/>
+        <Class IRI="#Mean_of_transportation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#is_in_quantity_of"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#max_transport_of"/>
+        <Class IRI="#Mean_of_transportation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#transport_cost"/>
+        <Class IRI="#Mean_of_transportation"/>
+    </DataPropertyDomain>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mean_of_transportation</IRI>
+        <Literal xml:lang="en">This class denotes the transport type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Place</IRI>
+        <Literal xml:lang="en">This class denotes the place from which the product arrives or leaves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Product</IRI>
+        <Literal xml:lang="en">This class denotes product.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#carries</IRI>
+        <Literal xml:lang="en">Transport carries products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_arrived_in</IRI>
+        <Literal xml:lang="en">The product has arrived in a place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_in_quantity_of</IRI>
+        <Literal xml:lang="en">Product quantity in supermarket.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#started_from</IRI>
+        <Literal xml:lang="en">The product started from a place.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
